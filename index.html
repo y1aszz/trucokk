@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="PT">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Jogo de Truco</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+        <link rel="manifest" href="manifest.json" />
+        <meta name="theme-color" content="white" />
+        <link rel="apple-touch-icon" href="images/diamante.png" />
+       
+    
+</head>
+<body>
+<div class="counter">
+  <div>
+  <h1 class="marcaTruco">Marcador de Truco</h1>
+  <center><img class="gatoTruco" src="images/gatoTruco.jpg"><br/></center>
+
+  <label for="equipe1">Nome da Equipe 1: </label>
+  <input type="text" id="equipe1" placeholder="Nome da Equipe 1">
+
+  <button class="button" onclick="setNomeEquipe(1)">Definir Nome</button>
+  <span id="nomeEquipe1"></span>
+
+  <br>
+
+  <label for="equipe2">Nome da Equipe 2: </label>
+  <input type="text" id="equipe2" placeholder="Nome da Equipe 2">
+
+  <button class="button" onclick="setNomeEquipe(2)">Definir Nome</button>
+  <span id="nomeEquipe2"></span>
+
+  <hr>
+
+  <h2>Pontuação</h2>
+  <p><span id="nomeEquipe1Pontos"></span> Pontos: <span id="pontosEquipe1">0</span></p>
+  <p><span id="nomeEquipe2Pontos"></span> Pontos: <span id="pontosEquipe2">0</span></p>
+
+  <button class="buttonPontos" onclick="marcarPontos(1, 1)">Equipe 1 - 1 Ponto</button>
+  <button class="buttonPontos" onclick="marcarPontos(1, 3)">Equipe 1 - 3 Pontos</button>
+  <button class="buttonPontos" onclick="marcarPontos(1, 6)">Equipe 1 - 6 Pontos</button>
+  <button class="buttonPontos" onclick="marcarPontos(1, 12)">Equipe 1 - 12 Pontos</button>
+
+  <br/>
+  <br/>
+
+  <button class="buttonPontos" onclick="marcarPontos(2, 1)">Equipe 2 - 1 Ponto</button>
+  <button class="buttonPontos" onclick="marcarPontos(2, 3)">Equipe 2 - 3 Pontos</button>
+  <button class="buttonPontos" onclick="marcarPontos(2, 6)">Equipe 2 - 6 Pontos</button>
+  <button class="buttonPontos" onclick="marcarPontos(2, 12)">Equipe 2 - 12 Pontos</button>
+
+  <hr>
+
+  <h2>Vitórias</h2>
+  <p><span id="nomeEquipe1Vitorias"></span> Vitórias: <span id="vitoriasEquipe1">0</span></p>
+  <p><span id="nomeEquipe2Vitorias"></span> Vitórias: <span id="vitoriasEquipe2">0</span></p>
+<button class="resetButton" onclick="resetJogo()">Resetar Jogo</button>
+</div>
+</div>
+
+    <script src="js/script.js"></script>
+    <script src="js/main.js"> </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #18181B;
+}
+
+.counter{
+  background-color: #262626;
+  padding: 2rem;
+  border: 8px;
+}
+
+
+
+.gatoTruco{
+  width: 220px;
+}
+
+.marcaTruco{
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.1;
+  background-image: linear-gradient(to bottom, #2e25ad, #3730A3, rgb(80, 77, 133));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+ 
+h2{
+  font-weight: bold;
+  line-height: 1.1;
+  background-image: linear-gradient(to bottom, #2e25ad, #3730A3, rgb(80, 77, 133));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+
+button{
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+button:hover{
+  opacity: .8;
+}
+
+.buttonPontos{
+  width: 6rem;
+  background-color: #18181B;
+}
+
+.buttonPontos:hover{
+  background-image: linear-gradient(to bottom, #18181B, #3730A3, #18181B);
+}
+
+p{
+  color: #fff;
+}
+
+label{
+  color: #fff;
+}
+
+.resetButton{
+  width: 100%;
+  font-size: 1.8rem;
+  background-color: #3730A3;
+  padding: .8rem 0;
+  margin-top: 1rem;
+}
+
+.button{
+  background-color: #3730A3;
+}
+
+input{
+  background-color: transparent;
+  color: #fff;
+}
